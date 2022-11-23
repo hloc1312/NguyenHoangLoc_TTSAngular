@@ -1,0 +1,259 @@
+/* Reset CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Working */
+#working {
+  background-image: url("../images/home_slider.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 2px 2px 6px #000;
+}
+
+#working .icon-logo i {
+  font-size: 60px;
+  margin-bottom: 60px;
+  display: inline-block;
+}
+
+#working h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+#working p {
+  line-height: 1.6;
+  font-size: 20px;
+  margin-bottom: 100px;
+}
+
+#working .icon-mouse {
+  animation: mouseUp 1s linear 0s infinite;
+}
+
+@keyframes mouseUp {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+}
+
+/* About us */
+#about-us,
+#services,
+#weDo,
+#contact {
+  width: 70%;
+  margin: 64px auto;
+}
+
+#about-us .text-divider,
+#services .text-divider,
+#weDo .text-divider,
+#contact .text-divider {
+  display: flex;
+  align-items: center;
+  --text-divider-gap: 1rem;
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+#about-us .text-divider::before,
+#about-us .text-divider::after,
+#services .text-divider::before,
+#services .text-divider::after,
+#weDo .text-divider::before,
+#weDo .text-divider::after,
+#contact .text-divider::before,
+#contact .text-divider::after {
+  content: "";
+  height: 2px;
+  background-color: #333;
+  flex-grow: 1;
+}
+#about-us .text-divider::before,
+#services .text-divider::before,
+#weDo .text-divider::before,
+#contact .text-divider::before {
+  margin-right: 48px;
+}
+#about-us .text-divider::after,
+#services .text-divider::after,
+#weDo .text-divider::after,
+#contact .text-divider::after {
+  margin-left: 48px;
+}
+
+#about-us .text-content,
+#services .text-content,
+#weDo .text-content,
+#contact .text-content {
+  position: relative;
+  text-align: center;
+  border-bottom: 2px solid #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#about-us .text-content p,
+#services .text-content p,
+#weDo .text-content p,
+#contact .text-content p {
+  padding: 32px 0;
+}
+
+#about-us .text-content::before,
+#services .text-content::before,
+#weDo .text-content::before,
+#contact .text-content::before {
+  content: "";
+  position: absolute;
+  height: calc(100% + 29px);
+  width: 2px;
+  background-color: #333;
+  top: -29px;
+  left: 0;
+}
+#about-us .text-content::after,
+#services .text-content::after,
+#weDo .text-content::after,
+#contact .text-content::after {
+  content: "";
+  position: absolute;
+  height: calc(100% + 29px);
+  width: 2px;
+  background-color: #333;
+  top: -29px;
+  right: 0;
+}
+
+/* Services */
+.wrapper-services {
+  background-image: url("../images/bg-2.jpg");
+  padding: 64px 0;
+}
+#services {
+  color: #fff;
+}
+
+#services .text-content {
+  text-shadow: 2px 2px 6px #000;
+}
+
+#services .text-divider::before,
+#services .text-divider::after {
+  background-color: #fff;
+}
+
+#services .text-content {
+  border-bottom: 2px solid #fff;
+}
+
+#services .text-content::before,
+#services .text-content::after {
+  background-color: #fff;
+}
+
+/* weDo */
+
+#weDo .text-content div {
+  padding: 32px 0;
+}
+
+#weDo .text-content .design i,
+#weDo .text-content .development i,
+#weDo .text-content .product i {
+  font-size: 60px;
+}
+
+#weDo .text-content h1 {
+  font-size: 30px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-top: 32px;
+}
+#weDo .text-content p {
+  line-height: 1.6;
+}
+
+/* job */
+#job {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#job .card {
+  width: calc(100% / 3);
+  padding: 16px;
+  position: relative;
+}
+
+#job .card .wrapper-img {
+  overflow: hidden;
+  display: block;
+}
+
+#job .card:hover img {
+  transform: scale(1.1);
+}
+
+#job .card img {
+  width: 100%;
+  display: block;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+#job .card h1 {
+  position: absolute;
+  bottom: 36px;
+  left: 50px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 2px 2px 6px #000;
+}
+
+/* contact */
+#contact button {
+  display: inline-block;
+  margin-top: 32px;
+  background-color: #3c3c3c;
+  padding: 20px 100px;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#contact button:hover {
+  background-color: #3c3c3cb0;
+}
+
+/* footer */
+#footer {
+  text-align: center;
+}
+
+#footer p {
+  display: inline-block;
+  margin-left: 8px;
+  margin-bottom: 48px;
+}

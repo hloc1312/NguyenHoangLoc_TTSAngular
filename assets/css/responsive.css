@@ -1,0 +1,101 @@
+/* PC */
+@media (min-width: 1024px) {
+}
+/* Tablet & Mobile */
+@media (max-width: 1023px) {
+  /* weDo */
+  #weDo .text-content {
+    padding: 0 16px;
+  }
+  /* job */
+  #job .card {
+    width: calc(100% / 2);
+  }
+}
+
+/* Tablet */
+@media (min-width: 740px) and(max-width:1023px) {
+  /* weDo */
+  #weDo .text-content {
+    padding: 0 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 740px) {
+  /* Working */
+  #working p {
+    font-size: 16px;
+  }
+
+  /* About us */
+
+  #about-us,
+  #services,
+  #weDo,
+  #contact {
+    width: 90%;
+  }
+
+  #about-us .text-divider,
+  #services .text-divider,
+  #weDo .text-divider,
+  #contact .text-divider {
+    font-size: 20px;
+  }
+
+  #about-us .text-divider::before,
+  #services .text-divider::before,
+  #weDo .text-divider::before,
+  #contact .text-divider::before {
+    margin-right: 8px;
+  }
+  #about-us .text-divider::after,
+  #services .text-divider::after,
+  #weDo .text-divider::after,
+  #contact .text-divider::after {
+    margin-left: 8px;
+  }
+
+  #about-us .text-content::before,
+  #services .text-content::before,
+  #weDo .text-content::before,
+  #contact .text-content::before {
+    top: -12px;
+    height: calc(100% + 12px);
+  }
+  #about-us .text-content::after,
+  #services .text-content::after,
+  #weDo .text-content::after,
+  #contact .text-content::after {
+    top: -12px;
+    height: calc(100% + 12px);
+  }
+
+  #about-us .text-content p,
+  #services .text-content p,
+  #weDo .text-content p,
+  #contact .text-content p {
+    padding: 32px 8px;
+  }
+
+  /* weDo */
+  #weDo .text-content .product i {
+    font-size: 40px;
+  }
+
+  #weDo .text-content h1 {
+    font-size: 18px;
+  }
+
+  /* job */
+  #job .card {
+    width: calc(100% / 1);
+  }
+
+  /* contact */
+  #contact button {
+    font-size: 16px;
+    padding: 20px;
+  }
+}
